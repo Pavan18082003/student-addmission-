@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply - UniSelect</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>UniSelect</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="colleges.html" class="nav-link">Colleges</a>
+                </li>
+                <li class="nav-item">
+                    <a href="dashboard.html" class="nav-link">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a href="apply.html" class="nav-link active">Apply</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="apply-header">
+        <h1>College Application</h1>
+        <p>Complete your application to one or more colleges</p>
+    </section>
+
+    <section class="application-form">
+        <div class="form-progress">
+            <div class="progress-step active">1</div>
+            <div class="progress-bar"></div>
+            <div class="progress-step">2</div>
+            <div class="progress-bar"></div>
+            <div class="progress-step">3</div>
+            <div class="progress-bar"></div>
+            <div class="progress-step">4</div>
+        </div>
+
+        <form id="applicationForm">
+            <div class="form-section active">
+                <h2>Select Colleges</h2>
+                <p>Choose the colleges you want to apply to:</p>
+                
+                <div class="college-selection">
+                    <div class="college-checkbox">
+                        <input type="checkbox" id="college1" name="colleges" value="college1">
+                        <label for="college1">
+                            <strong>University of Technology</strong>
+                            <span>New York, NY | $15,000/year</span>
+                        </label>
+                    </div>
+                    <div class="college-checkbox">
+                        <input type="checkbox" id="college2" name="colleges" value="college2">
+                        <label for="college2">
+                            <strong>Business Institute of America</strong>
+                            <span>Boston, MA | $18,500/year</span>
+                        </label>
+                    </div>
+                    <div class="college-checkbox">
+                        <input type="checkbox" id="college3" name="colleges" value="college3">
+                        <label for="college3">
+                            <strong>Liberal Arts College</strong>
+                            <span>San Francisco, CA | $12,750/year</span>
+                        </label>
+                    </div>
+                    <div class="college-checkbox">
+                        <input type="checkbox" id="college4" name="colleges" value="college4">
+                        <label for="college4">
+                            <strong>State University</strong>
+                            <span>Chicago, IL | $10,200/year</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="form-navigation">
+                    <button type="button" class="btn-next">Next</button>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>Personal Information</h2>
+                
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="citizenship">Citizenship</label>
+                        <select id="citizenship" name="citizenship" required>
+                            <option value="">Select...</option>
+                            <option value="us">United States</option>
+                            <option value="international">International</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-navigation">
+                    <button type="button" class="btn-prev">Previous</button>
+                    <button type="button" class="btn-next">Next</button>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>Academic Background</h2>
+                
+                <div class="form-group">
+                    <label for="education">Highest Education Level</label>
+                    <select id="education" name="education" required>
+                        <option value="">Select...</option>
+                        <option value="highschool">High School Diploma</option>
+                        <option value="associate">Associate Degree</option>
+                        <option value="bachelor">Bachelor's Degree</option>
+                        <option value="master">Master's Degree</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="school">School Name</label>
+                    <input type="text" id="school" name="school" required>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="gpa">GPA</label>
+                        <input type="number" id="gpa" name="gpa" step="0.01" min="0" max="4.0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="graduation">Graduation Year</label>
+                        <input type="number" id="graduation" name="graduation" min="1990" max="2030" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="essay">Personal Essay</label>
+                    <textarea id="essay" name="essay" rows="5" placeholder="Tell us about your academic interests and goals..." required></textarea>
+                </div>
+                
+                <div class="form-navigation">
+                    <button type="button" class="btn-prev">Previous</button>
+                    <button type="button" class="btn-next">Next</button>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>Review and Submit</h2>
+                
+                <div class="review-section">
+                    <h3>Selected Colleges</h3>
+                    <div id="review-colleges"></div>
+                </div>
+                
+                <div class="review-section">
+                    <h3>Personal Information</h3>
+                    <div id="review-personal"></div>
+                </div>
+                
+                <div class="review-section">
+                    <h3>Academic Background</h3>
+                    <div id="review-academic"></div>
+                </div>
+                
+                <div class="form-group">
+                    <input type="checkbox" id="agree" name="agree" required>
+                    <label for="agree">I certify that the information provided is accurate and complete.</label>
+                </div>
+                
+                <div class="form-navigation">
+                    <button type="button" class="btn-prev">Previous</button>
+                    <button type="submit" class="btn-submit">Submit Application</button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 UniSelect College Admission Portal. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

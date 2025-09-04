@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colleges - UniSelect</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>UniSelect</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="colleges.html" class="nav-link active">Colleges</a>
+                </li>
+                <li class="nav-item">
+                    <a href="dashboard.html" class="nav-link">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a href="apply.html" class="nav-link">Apply</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="colleges-header">
+        <h1>Browse Colleges</h1>
+        <p>Find the perfect college for your academic journey</p>
+        <div class="search-bar">
+            <input type="text" placeholder="Search by name, location, or program...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+    </section>
+
+    <section class="filters">
+        <div class="filter-container">
+            <select>
+                <option>Filter by Location</option>
+                <option>North</option>
+                <option>South</option>
+                <option>East</option>
+                <option>West</option>
+            </select>
+            <select>
+                <option>Filter by Program</option>
+                <option>Engineering</option>
+                <option>Business</option>
+                <option>Arts</option>
+                <option>Science</option>
+            </select>
+            <select>
+                <option>Sort By</option>
+                <option>Name (A-Z)</option>
+                <option>Name (Z-A)</option>
+                <option>Tuition (Low to High)</option>
+                <option>Tuition (High to Low)</option>
+            </select>
+        </div>
+    </section>
+
+    <section class="colleges-list">
+        <div class="college-card">
+            <div class="college-image">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMjAwIiB2aWV3Qm94PSIwIDAgMzAwIDIwMCI+PHJlY3Qgd2lkdGg9IjMwMCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNmMGY2ZmYiLz48Y2lyY2xlIGN4PSI4MCIgY3k9IjgwIiByPSI0MCIgZmlsbD0iIzdhYjNmZiIvPjxyZWN0IHg9IjEyMCIgeT0iNDAiIHdpZHRoPSIxNjAiIGhlaWdodD0iODAiIGZpbGw9IiM3YWIzZmYiLz48L3N2Zz4=" alt="University A">
+            </div>
+            <div class="college-info">
+                <h3>University of Technology</h3>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> New York, NY</p>
+                <p class="description">A leading institution in engineering and technology education with state-of-the-art facilities.</p>
+                <div class="college-details">
+                    <span class="programs"><i class="fas fa-graduation-cap"></i> 45 Programs</span>
+                    <span class="tuition"><i class="fas fa-dollar-sign"></i> $15,000/year</span>
+                </div>
+                <div class="college-actions">
+                    <button class="btn-view">View Details</button>
+                    <button class="btn-apply">Apply Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="college-card">
+            <div class="college-image">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMjAwIiB2aWV3Qm94PSIwIDAgMzAwIDIwMCI+PHJlY3Qgd2lkdGg9IjMwMCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNmZmYyZjAiLz48cmVjdCB4PSI1MCIgeT0iNTAiIHdpZHRoPSIyMDAiIGhlaWdodD0iMTAwIiBmaWxsPSIjZmY3ZjAwIi8+PGNpcmNsZSBjeD0iMjUwIiBjeT0iMTAwIiByPSI0MCIgZmlsbD0iI2ZmN2YwMCIvPjwvc3ZnPg==" alt="University B">
+            </div>
+            <div class="college-info">
+                <h3>Business Institute of America</h3>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> Boston, MA</p>
+                <p class="description">Premier business school with AACSB accreditation and strong industry connections.</p>
+                <div class="college-details">
+                    <span class="programs"><i class="fas fa-graduation-cap"></i> 32 Programs</span>
+                    <span class="tuition"><i class="fas fa-dollar-sign"></i> $18,500/year</span>
+                </div>
+                <div class="college-actions">
+                    <button class="btn-view">View Details</button>
+                    <button class="btn-apply">Apply Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="college-card">
+            <div class="college-image">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMjAwIiB2aWV3Qm94PSIwIDAgMzAwIDIwMCI+PHJlY3Qgd2lkdGg9IjMwMCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNmMGZmZjAiLz48cG9seWdvbiBwb2ludHM9IjE1MCw1MCAyMTUsMTM1IDIxNSw2NSIgZmlsbD0iIzBhYzY1MCIvPjxwb2x5Z29uIHBvaW50cz0iMTUwLDUwIDg1LDEzNSA4NSw2NSIgZmlsbD0iIzBhYzY1MCIvPjxyZWN0IHg9Ijg1IiB5PSIxMzUiIHdpZHRoPSIxMzAiIGhlaWdodD0iMzAiIGZpbGw9IiMwYWM2NTAiLz48L3N2Zz4=" alt="University C">
+            </div>
+            <div class="college-info">
+                <h3>Liberal Arts College</h3>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> San Francisco, CA</p>
+                <p class="description">Focused on holistic education with strong programs in humanities and social sciences.</p>
+                <div class="college-details">
+                    <span class="programs"><i class="fas fa-graduation-cap"></i> 58 Programs</span>
+                    <span class="tuition"><i class="fas fa-dollar-sign"></i> $12,750/year</span>
+                </div>
+                <div class="college-actions">
+                    <button class="btn-view">View Details</button>
+                    <button class="btn-apply">Apply Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 UniSelect College Admission Portal. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
